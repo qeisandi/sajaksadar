@@ -11,6 +11,14 @@ class Regis extends StatefulWidget {
 class _RegisState extends State<Regis> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Center(child: Text("Regis")),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.arrow_back),
+      ),
+    );
   }
 }
